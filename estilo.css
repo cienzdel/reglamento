@@ -46,3 +46,4 @@ input[type="search"]:focus { border-color: var(--azul); }
 .etiqueta.retoque { background: var(--gris-fondo); color: var(--suave); }
 .etiqueta.doc-nuevo { background: var(--azul-claro); color: var(--azul); }
 .etiqueta.doc-antiguo { background: var(--gris-fondo); color: var(--suave); }
+[hidden] { display: none !important; }

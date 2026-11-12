@@ -201,7 +201,7 @@ def caja(contenido, color="#e9edf7", borde=AZUL):
             f"{contenido}</div>")
 
 
-def buscador(doc, alto=340):
+def buscador(doc, alto=300):
     return (f'<iframe src="{PAGES}/buscar/?doc={doc}" title="Buscador del Reglamento" '
             f'style="border:1px solid #cfd5e2;border-radius:8px;width:100%;height:{alto}px" loading="lazy"></iframe>')
 
