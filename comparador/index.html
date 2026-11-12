@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qué cambia en el Reglamento · Consejo de Estudiantes de Ciencias</title>
+<meta name="description" content="Cambios entre el Reglamento de la Delegación de Alumnos de 2015 y la propuesta de Reglamento del Consejo de Estudiantes de la Facultad de Ciencias, tema a tema y con los dos textos lado a lado.">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="comparador.css">
+</head>
+<body>
+<header class="cabecera">
+  <div class="envoltorio">
+    <h1>Qué cambia en el Reglamento</h1>
+    <p class="entradilla">Del <a id="l-antiguo" target="_top">Reglamento de 2015</a>, que sigue en vigor, a la
+      <a id="l-nuevo" target="_top">propuesta de Reglamento del Consejo de Estudiantes</a>, pendiente de ratificar por el Consejo de Facultad.</p>
+  </div>
+</header>
+
+<main class="envoltorio">
+  <section class="bloque" aria-labelledby="t-esencial">
+    <h2 id="t-esencial">Lo esencial</h2>
+    <ul class="esencial" id="esencial"></ul>
+  </section>
+
+  <details class="bloque nombres" open>
+    <summary><h2>Antes de leer: los nombres cambian</h2></summary>
+    <p class="ayuda">Ojo al cruce: en 2015 «Consejo de estudiantes» era el <em>equipo</em>; ahora es el órgano de <em>todos</em> los representantes.</p>
+    <table class="tabla-nombres">
+      <thead><tr><th scope="col">En 2015</th><th scope="col">En la propuesta</th></tr></thead>
+      <tbody id="nombres"></tbody>
+    </table>
+  </details>
+
+  <div class="herramientas" id="herramientas">
+    <label for="q" class="visualmente-oculto">Buscar entre los cambios</label>
+    <input type="search" id="q" placeholder="Buscar entre los cambios (p. ej. voto, censura, titulación)" autocomplete="off">
+    <div class="filtros" role="group" aria-label="Filtrar por tema" id="temas"></div>
+    <div class="filtros secundarios">
+      <div role="group" aria-label="Filtrar por tipo de cambio" id="tipos"></div>
+      <button type="button" class="enlace" id="todo">Desplegar todos los textos</button>
+    </div>
+  </div>
+  <p class="estado" id="estado" aria-live="polite"></p>
+
+  <div id="fichas"></div>
+
+  <footer class="pie">
+    <p><strong>Cómo leer los textos:</strong> en cada cambio, «Ver el texto» muestra el apartado de 2015 a la izquierda y el de la propuesta a la derecha.
+      <del class="d">Tachado en rojo</del>: lo que se quita. <ins class="i">Subrayado en verde</ins>: lo que se añade. El número de cada apartado enlaza a su texto completo.</p>
+    <p>Las explicaciones son un resumen orientativo; lo que vale es el texto del Reglamento.</p>
+    <p class="ia"><strong>Declaración de uso de inteligencia artificial.</strong> Esta página de comparativa se ha hecho con ayuda de Claude (Anthropic), un modelo de inteligencia artificial,
+      que ha redactado los resúmenes de cada cambio y ha programado la página a partir de los dos textos oficiales. La Comisión Permanente ha revisado el contenido.
+      Los textos de los reglamentos que aparecen aquí son los oficiales, sin cambios.</p>
+  </footer>
+</main>
+<script src="comparador.js"></script>
+</body>
+</html>

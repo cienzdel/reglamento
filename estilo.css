@@ -1,0 +1,48 @@
+/* Estilo común del buscador y del comparador. Solo tema claro: se incrustan en cienzdel.unizar.es, que es claro. */
+:root {
+  --azul: #1b2a5c;
+  --azul-claro: #e9edf7;
+  --texto: #1d2230;
+  --suave: #5b6274;
+  --borde: #cfd5e2;
+  --fondo: #f6f7fb;
+  --tarjeta: #ffffff;
+  --rojo: #b3261e;
+  --rojo-fondo: #fbe6e4;
+  --verde: #1e6b3f;
+  --verde-fondo: #ddf3e4;
+  --ambar: #8a5a00;
+  --ambar-fondo: #fff1d6;
+  --gris-fondo: #eceef3;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--texto); background: var(--fondo); }
+a { color: var(--azul); }
+.envoltorio { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+button { font: inherit; cursor: pointer; }
+:focus-visible { outline: 3px solid color-mix(in srgb, var(--azul) 45%, transparent); outline-offset: 2px; }
+mark { background: #ffe58a; color: inherit; padding: 0 1px; border-radius: 2px; }
+.visualmente-oculto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+input[type="search"] {
+  font: inherit; width: 100%; padding: 10px 12px; border: 1px solid var(--borde); border-radius: 8px;
+  background: var(--tarjeta); color: var(--texto);
+}
+input[type="search"]:focus { border-color: var(--azul); }
+
+.chip {
+  border: 1px solid var(--borde); background: var(--tarjeta); color: var(--texto);
+  border-radius: 999px; padding: 4px 12px; font-size: .9rem; line-height: 1.4;
+}
+.chip:hover { border-color: var(--azul); }
+.chip[aria-pressed="true"] { background: var(--azul); border-color: var(--azul); color: #fff; }
+
+.etiqueta { display: inline-block; font-size: .75rem; font-weight: 700; letter-spacing: .02em; text-transform: uppercase;
+  padding: 1px 8px; border-radius: 4px; white-space: nowrap; }
+.etiqueta.nuevo { background: var(--verde-fondo); color: var(--verde); }
+.etiqueta.cambia { background: var(--ambar-fondo); color: var(--ambar); }
+.etiqueta.retoque { background: var(--gris-fondo); color: var(--suave); }
+.etiqueta.doc-nuevo { background: var(--azul-claro); color: var(--azul); }
+.etiqueta.doc-antiguo { background: var(--gris-fondo); color: var(--suave); }
