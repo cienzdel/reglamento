@@ -22,7 +22,7 @@ PAGES = "https://cienzdel.github.io/reglamento"
 ARCHIVOS = "/sites/cienzdel/files/archivos"
 PAGINA = {"nuevo": f"{WEB}/reglamento/nuevo", "antiguo": f"{WEB}/reglamento/antiguo"}
 PDF = {
-    "nuevo": f"{ARCHIVOS}/borrador_reglamento_consejo_estudiantes_2026_v2.pdf",
+    "nuevo": f"{ARCHIVOS}/borrador_reglamento_consejo_estudiantes_2026_v3.pdf",
     "antiguo": f"{ARCHIVOS}/reglamento_delegacion_alumnos_2015.pdf",
     "antiguo_transcripcion": f"{ARCHIVOS}/reglamento_delegacion_alumnos_2015_transcripcion.pdf",
 }
